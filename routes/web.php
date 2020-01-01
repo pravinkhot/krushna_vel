@@ -22,3 +22,6 @@ Route::get('/about_us', function () {
 Route::get('/contact_us', function () {
     return view('website.contact_us');
 })->name('website.contactUs');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

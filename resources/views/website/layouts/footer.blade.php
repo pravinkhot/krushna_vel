@@ -37,7 +37,7 @@
         <div class="row">
             <div class="col-md-6 align-self-center">
                 <div class="copyright-text">
-                    <p><a href="#">{{ config('custom.websiteName') }}</a> &#169; 2019 All Right Reserved</p>
+                    <p><a href="#">{{ config('custom.websiteName') }}</a> &#169; {{ \Carbon\Carbon::now()->format('Y') }} All Right Reserved</p>
                 </div>
             </div>
             <div class="col-md-6">
