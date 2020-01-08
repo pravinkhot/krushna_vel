@@ -1,7 +1,7 @@
 @extends('website.layouts.app')
 
 @section('content')
-    <!-- Banner -->
+    <!-- End of Banner -->
 
     <section class="banner bg-banner overlay">
         <div class="container">

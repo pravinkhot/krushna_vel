@@ -19,9 +19,10 @@ Route::get('/about_us', function () {
     return view('website.about_us');
 })->name('website.aboutUs');
 
-Route::get('/contact_us', function () {
-    return view('website.contact_us');
-})->name('website.contactUs');
-Auth::routes();
+Route::namespace('Website')->group(function () {
+    Route::get('/contact_us', 'ContactController@index')->name('website.contactUs');
+    Route::post('/contact_us', 'ContactController@saveContact')->name('website.contactUs');
+});
 
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
